@@ -1,6 +1,7 @@
 ### VADE RETRO
 modele/pdo.php
 back-office/modele/pdo.php
+vanwelde-vade-retro.sql
 
 ### Example user template
 
@@ -9,5 +10,3 @@ back-office/modele/pdo.php
 *.iml
 out
 gen
-
-# Created by .ignore support plugin (hsz.mobi)
