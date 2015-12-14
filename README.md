@@ -29,7 +29,7 @@ $ git clone https://github.com/Totoyor/Vade-Retro
 ```
 
 Il faut ensuite changer le fichier qui gère PDO :
-* 1. Changez vos information de base de donnée dans modele/pdo-sample.php`
+* 1. Changez vos information de base de donnée dans `modele/pdo-sample.php`
 * 2 .Renommez-le en pdo.php
 
 ### Base de données
