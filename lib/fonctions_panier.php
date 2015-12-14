@@ -3,7 +3,6 @@
 // fonctions :
 // Ajouter Produit,combien produit, Supprimer produit, changer qte, recalculer panier et valider
 
-
 function creer_panier() {
     // return true si la fonction crée le panier et false si le panier existe déjà
     if (!isset($_SESSION["panier"])) {    
@@ -21,7 +20,6 @@ function creer_panier() {
         return false;
     }
 }
-
 
 function ajout_produit($id, $ref, $nom, $descr, $prix_ht, $taux, $qte) {   
 

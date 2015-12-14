@@ -1,39 +1,39 @@
-*{  margin:auto;
-    font-size: 100%;}
+* {
+    margin: auto;
+    font-size: 100%;
+}
 
 /* Font Face */
 @font-face {
- font-family: 'pixel font-7';
+    font-family: 'pixel font-7';
     src: url('../fonts/pixel font-7.eot');
     src: url('../fonts/pixel font-7.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pixel font-7.woff') format('woff'),
-         url('../fonts/pixel font-7.ttf') format('truetype'),
-         url('../fonts/pixel font-7.svg#pixel font-7') format('svg');
+    url('../fonts/pixel font-7.woff') format('woff'),
+    url('../fonts/pixel font-7.ttf') format('truetype'),
+    url('../fonts/pixel font-7.svg#pixel font-7') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
- font-family: 'Avenir';
+    font-family: 'Avenir';
     src: url('../fonts/AvenirNextLTPro-Regular.eot');
     src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
-         url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
-         url('../fonts/AvenirNextLTPro-Regular.svg#pixel font-7') format('svg');
+    url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+    url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
+    url('../fonts/AvenirNextLTPro-Regular.svg#pixel font-7') format('svg');
 }
 
-
 body {
-    
-background: rgb(70,92,136); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(70,92,136,1) 0%, rgba(127,165,244,1) 50%, rgba(70,92,136,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(70,92,136,1)), color-stop(50%,rgba(127,165,244,1)), color-stop(100%,rgba(70,92,136,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(70,92,136,1) 0%,rgba(127,165,244,1) 50%,rgba(70,92,136,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(70,92,136,1) 0%,rgba(127,165,244,1) 50%,rgba(70,92,136,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(70,92,136,1) 0%,rgba(127,165,244,1) 50%,rgba(70,92,136,1) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(70,92,136,1) 0%,rgba(127,165,244,1) 50%,rgba(70,92,136,1) 100%); 
 
-    
+    background: rgb(70, 92, 136); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(70, 92, 136, 1) 0%, rgba(127, 165, 244, 1) 50%, rgba(70, 92, 136, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(70, 92, 136, 1)), color-stop(50%, rgba(127, 165, 244, 1)), color-stop(100%, rgba(70, 92, 136, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(70, 92, 136, 1) 0%, rgba(127, 165, 244, 1) 50%, rgba(70, 92, 136, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(70, 92, 136, 1) 0%, rgba(127, 165, 244, 1) 50%, rgba(70, 92, 136, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(70, 92, 136, 1) 0%, rgba(127, 165, 244, 1) 50%, rgba(70, 92, 136, 1) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(70, 92, 136, 1) 0%, rgba(127, 165, 244, 1) 50%, rgba(70, 92, 136, 1) 100%);
+
     /****
     background: rgb(53,70,104); 
 background: -moz-linear-gradient(left,  rgba(53,70,104,1) 0%, rgba(73,96,143,1) 50%, rgba(53,70,104,1) 100%);
@@ -44,32 +44,30 @@ background: -ms-linear-gradient(left,  rgba(53,70,104,1) 0%,rgba(73,96,143,1) 50
 background: linear-gradient(to right,  rgba(53,70,104,1) 0%,rgba(73,96,143,1) 50%,rgba(53,70,104,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354668', endColorstr='#354668',GradientType=1 );***/
 
-background-size: contain;
-background-attachment: fixed;
+    background-size: contain;
+    background-attachment: fixed;
     font-size: 92%;
 
 }
 
-
 /*** ------------OUTILS--------------- ***/
 
 .border {
-    border: solid #333 1px; }
-
-p {font-family: "Avenir";
-    
+    border: solid #333 1px;
 }
 
-h1
-{
-	color:#333;
+p {
+    font-family: "Avenir";
+
+}
+
+h1 {
+    color: #333;
     font-family: "pixel font-7";
 
 }
 
-
-h2
-{
+h2 {
 
     margin-top: 0px;
     font-family: "pixel font-7";
@@ -77,54 +75,43 @@ h2
     margin-bottom: 5px;
 }
 
-
-
-h3
-
-{
-	color:#333;
+h3 {
+    color: #333;
 }
 
-
-
-.grand
-{
-	font-size: 1.8em;
+.grand {
+    font-size: 1.8em;
 }
 
-.moyen
-{
-	font-size: 1.4em;
+.moyen {
+    font-size: 1.4em;
 }
 
 .normal {
     font-size: 1.1em;
 }
 
-.petit
-{
-	font-size: 0.8em;
+.petit {
+    font-size: 0.8em;
 }
 
-.center{ text-align: center}
-
-.selected
-{
-	color: #09F;
-	font-weight: bold;
+.center {
+    text-align: center
 }
 
-.interieur
-{
-	padding: 5px 0px 5px 0px;
+.selected {
+    color: #09F;
+    font-weight: bold;
 }
 
-.padding
-{
-	margin-bottom: 5px;
+.interieur {
+    padding: 5px 0px 5px 0px;
+}
+
+.padding {
+    margin-bottom: 5px;
     margin-top: 5px;
 }
-
 
 a {
     text-decoration: none;
@@ -135,42 +122,51 @@ a {
     color: #465c88;
 }
 
-.blueC{
+.blueC {
     color: #81a7f7;
 }
 
 .red {
-color: #e73e4d;
+    color: #e73e4d;
 }
 
 .redF {
     color: #bd3440;
 }
 
-.white { color: #fff;}
+.white {
+    color: #fff;
+}
 
-.grey { color: #ddd }
+.grey {
+    color: #ddd
+}
 
 .ombrage {
-  -moz-box-shadow: 0px 5px 12px rgba(0,0,0,0.1); 
-  -webkit-box-shadow: 0px 5px 12px rgba(0,0,0,0.1); 
-  box-shadow: 0px 5px 12px rgba(0,0,0,0.1);
-} 
+    -moz-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+}
 
-.right {text-align: right;}
+.right {
+    text-align: right;
+}
 
-.secure {padding: 6px;}
-    
+.secure {
+    padding: 6px;
+}
+
 /* ------------SQUELETON--------------- */
-#container{width:100% ;
-margin:auto;
-background-color: #fff;}
+#container {
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+}
 
 #header {
     background-color: #fff;
     z-index: 3000;
 }
-
 
 #action {
     background-color: #fff;
@@ -187,20 +183,20 @@ background-color: #fff;}
 
 #part_bas {
 
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     width: 100%;
 
 }
 
 #encar {
-    background-color: rgba(255,255,255,0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     margin-top: 85px;
     border-radius: 2px;
     margin-bottom: 85px;
 }
 
 #logo {
-     height: 90px;
+    height: 90px;
     background: url(../images/logo.png) no-repeat;
     background-size: contain;
     background-position: center;
@@ -213,10 +209,6 @@ background-color: #fff;}
     width: 100%;
 }
 
-
-
-
-
 .basicbutton:hover {
     background-color: #bd3440;
     transition: background 0.3s;
@@ -226,7 +218,7 @@ background-color: #fff;}
 
     padding-top: 18px;
     font-family: "pixel font-7";
-    padding-bottom:  16px;
+    padding-bottom: 16px;
     margin-right: 10px;
     margin-left: 10px;
 
@@ -238,117 +230,108 @@ background-color: #fff;}
 .picto {
     height: 80px;
     margin-top: 10px;
-    
+
 }
 
 #console1 {
     background-image: url(../images/pack1.png);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: 80%;
     width: 50%;
-    
+
 }
 
-
 #console2 {
-        
-    
 
-
-   
 }
 
 #jeuxvideo {
     background-color: #465c88;
 }
 
-
-
 /****************Menu****************/
 
 #menu ul {
 
-margin-left: 0%;
+    margin-left: 0%;
     margin-right: 0px;
- list-style-type:none;
- text-align:center;
+    list-style-type: none;
+    text-align: center;
     width: 110%;
     margin-top: 30px;
-    
- }
+
+}
 
 #menu li {
- float:left;
- margin:auto;
- padding:0;
-font-family: "Avenir";
- }
+    float: left;
+    margin: auto;
+    padding: 0;
+    font-family: "Avenir";
+}
 
 #menu li a {
- display:block;
- color:#333;
- text-decoration:none;
+    display: block;
+    color: #333;
+    text-decoration: none;
     border-radius: 2px 2px 0px 0px;
-    
- 
+
     padding-top: 8px;
     padding-bottom: 3px;
     padding-right: 11px;
     padding-left: 11px;
     transition: background 0.3s;
- }
+}
 
 #menu li a:hover {
- -moz-animation-name:hovermenu;
-	-moz-animation-duration:0.5s;
-	-moz-animation-iteration-count:1;
-	-moz-animation-direction:alternate;
-	-moz-animation-timing-function:ease-in-out;
-    
+    -moz-animation-name: hovermenu;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+
     background-color: #eee;
     transition: background 0.3s;
-    
- }
- 
- #menu li ul {
- position:absolute;
- }
- 
- #menu ul li ul {
- display:none;
+
+}
+
+#menu li ul {
+    position: absolute;
+}
+
+#menu ul li ul {
+    display: none;
     z-index: 3000;
- }
- 
- #menu ul li:hover ul {
- display:block;
- }
+}
+
+#menu ul li:hover ul {
+    display: block;
+}
 
 #menu li:hover ul li {
- float:none;
- }
- 
+    float: none;
+}
 
 #packsmenu {
-    color: #333!important;
+    color: #333 !important;
 
 }
 
 #jvmenu {
-        color:#333!important;
-    
+    color: #333 !important;
+
 }
 
 #packsmenu:hover {
     background-color: #7fa5f4 !important;
-    color: #fff!important;
+    color: #fff !important;
 
 }
 
 #jvmenu:hover {
-        background-color: #bd3440 !important;
-        color:#fff!important;
-    
+    background-color: #bd3440 !important;
+    color: #fff !important;
+
 }
 
 #menu {
@@ -374,8 +357,6 @@ font-family: "Avenir";
 }***/
 
 /*******************************************/
-
-
 
 #titreLogo {
     margin-top: 10px;
@@ -409,8 +390,8 @@ font-family: "Avenir";
 }
 
 #panier {
-  background: url(../images/panier.png) no-repeat;
-    background-size:contain;
+    background: url(../images/panier.png) no-repeat;
+    background-size: contain;
     background-position: center bottom;
     margin-top: 5px;
     height: 30px;
@@ -433,10 +414,11 @@ font-family: "Avenir";
 /**********************/
 #valeurs {
     background: #222;
-     height: 15px;
+    height: 15px;
 }
 
-#valeurs p { padding-top: 3px;
+#valeurs p {
+    padding-top: 3px;
     padding-bottom: 3px;
     color: white;
     text-align: center;
@@ -455,12 +437,11 @@ font-family: "Avenir";
     border-radius: 4px;
     margin-bottom: 20px;
     background-size: 100%;
-    width:30%;
+    width: 30%;
 
-    
-    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
-  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 #jv1 {
@@ -471,6 +452,7 @@ font-family: "Avenir";
     background-size: cover;
     display: none;
 }
+
 #presentation {
     width: 100%;
     float: left;
@@ -490,11 +472,11 @@ font-family: "Avenir";
     margin-right: 2%;
     margin-left: 2%;
     color: white;
-      -moz-box-shadow: 2px 2px 0px rgba(0,0,0,0.3); 
-  -webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.3); 
-  box-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
     transition: background 0.3s;
-    
+
 }
 
 #titrepoint {
@@ -502,7 +484,7 @@ font-family: "Avenir";
 }
 
 #bouton:hover {
-background-color: #465c88;
+    background-color: #465c88;
     transition: background 0.3s;
 }
 
@@ -520,7 +502,7 @@ background-color: #465c88;
     background-image: url(../images/picto_console3.png);
     background-size: contain;
     background-position: center;
-    
+
     background-repeat: no-repeat;
     background-size: 80%;
 }
@@ -530,7 +512,7 @@ background-color: #465c88;
     background-size: contain;
     background-position: center;
     margin-top: 10px;
-    
+
     background-repeat: no-repeat;
     background-size: 70%;
 }
@@ -539,12 +521,11 @@ background-color: #465c88;
     background-image: url(../images/picto_livraison.png);
     background-size: contain;
     background-position: center;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 80%;
 }
 
 /******************/
-
 
 #titregalerie {
     margin-top: 25px;
@@ -560,7 +541,7 @@ background-color: #465c88;
 }
 
 #jv3 {
-       margin-left: 10px;
+    margin-left: 10px;
     background: url(../images/jv3.png);
     background-position: center;
     background-size: cover;
@@ -568,25 +549,23 @@ background-color: #465c88;
 }
 
 #jv4 {
-       
-  
+
     display: none;
 }
 
 #jv5 {
-    
 
     display: none;
 }
 
 .jv:hover {
-     -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
-  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
-    
-    background-size: 110%!important;
-     margin-left: 2.7%;
-    
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+
+    background-size: 110% !important;
+    margin-left: 2.7%;
+
 }
 
 /******************//******************/
@@ -599,21 +578,18 @@ background-color: #465c88;
 
 /******************/
 
-
-
-
 .partiHaut {
     height: 300px;
     width: 100%;
 }
 
 .partiBas {
-    background-color: rgba(250,250,250,0.9);
+    background-color: rgba(250, 250, 250, 0.9);
     padding: 20px 40px 20px 40px;
     z-index: 2000;
     margin-top: 0%;
     bottom: 0px;
-    
+
 }
 
 .mention {
@@ -647,7 +623,7 @@ background-color: #465c88;
 /*************LIST***************/
 .listtext {
     list-style-type: square;
-    font-family:  "Avenir";
+    font-family: "Avenir";
     padding-left: 18px;
     font-size: 1em;
     line-height: 25px;
@@ -657,13 +633,13 @@ background-color: #465c88;
 .listtext2 {
     list-style-type: square;
     list-style-position: inherit;
-    font-family:  "Avenir";
+    font-family: "Avenir";
     line-height: 16px;;
-    font-size:1em;
+    font-size: 1em;
     line-height: 20px;
 }
-/****************************/
 
+/****************************/
 
 #textproduit {
     margin-top: 15px;
@@ -679,24 +655,23 @@ background-color: #465c88;
     opacity: 1;
     z-index: 4000;
     -moz-transition: opacity 0.3s ease-in;
--webkit-transition:opacity 0.3s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
     margin-top: 100%;
 }
 
 .produithover:hover {
-opacity:1;
+    opacity: 1;
 }
 
 .prix {
-margin-top: 90%;
-margin-left: 85%;
+    margin-top: 90%;
+    margin-left: 85%;
 }
 
 /***********FOOTER*****************/
 
-
 footer {
-     background-color: #222;
+    background-color: #222;
 }
 
 #copyright {
@@ -716,16 +691,11 @@ footer {
     padding-bottom: 15px;
 }
 
-
-
 .listtext2 li a:hover {
     text-decoration: underline;
 }
 
-
 /************BLOG****************/
-
-
 
 #imagearticle {
     height: 110px;
@@ -740,10 +710,7 @@ footer {
     font-family: "Avenir";
     font-size: 1.1em;
 
-
 }
-
-
 
 #article {
     padding-left: 10px;
@@ -771,26 +738,22 @@ footer {
 }
 
 #lien:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-
-
 /*************RS***************/
-
 
 #rs {
     width: 70%;
     margin-top: -280px;
     float: right;
 
-    padding-bottom:10px;
+    padding-bottom: 10px;
     padding-top: 10px;
     z-index: 1;
-        
+
 }
-    
-    
+
 #titreflux {
     margin-top: 18px;
     margin-bottom: 15px;
@@ -800,12 +763,10 @@ footer {
 
 #encartwi {
 
-    
     background-color: #fff;
     border: #7fa5f4 2px solid;
     border-radius: 10px;
     position: relative;
-    
 
 }
 
@@ -813,7 +774,7 @@ footer {
     list-style-type: none;
     margin-bottom: 8px;
     margin-left: -15px;
-    color: #333; 
+    color: #333;
 
 }
 
@@ -827,7 +788,7 @@ footer {
     background: url(../images/fb.png);
     background-repeat: no-repeat;
     background-position: center;
-        background-size: 60%;
+    background-size: 60%;
 }
 
 #tw {
@@ -857,20 +818,20 @@ footer {
     /**background-color: rgba(70,92,136,0.9);**/
     position: absolute;
 
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
     font-size: 1.1em;
-      margin-top: 204px;
+    margin-top: 204px;
 }
 
 .jvconsole {
-  
+
     height: 25px;
     width: 100%;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     position: absolute;
     opacity: 1;
     margin-top: 180px;
-      
+
 }
 
 .jvconsole:hover {
@@ -881,19 +842,19 @@ footer {
     font-family: "pixel font-7";
 
     color: #e73e4d;
-    
+
 }
 
 /************INTERACT****************/
 
 .picto {
-    
-    width:16.666666666%;
+
+    width: 16.666666666%;
     margin-left: 8.333333333%;
     margin-right: 8.333333333%;
     background-size: 80%;
     margin-top: 20px;
-    
+
 }
 
 .concept {
@@ -901,7 +862,7 @@ footer {
 }
 
 #filtre {
- background-color: #eee;
+    background-color: #eee;
     color: #465c88;
     border-style: ridge;
     border: 2px #333;
@@ -913,70 +874,60 @@ footer {
     font-size: 1em;
 }
 
-
-
 #nexletter {
     width: 65%;
     padding-top: 4px;
-padding-bottom: 4px;
-font-size: 1em;
+    padding-bottom: 4px;
+    font-size: 1em;
 }
 
 .butonews {
     width: 35%;
-margin-left: -4px;
-background-color:#e73e4d;
-color: white;
-font-size: 1em;
-    padding-top: 6px!important;
-    padding-bottom: 6px!important;
-    margin-top:0px;
-border: 1px;
+    margin-left: -4px;
+    background-color: #e73e4d;
+    color: white;
+    font-size: 1em;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    margin-top: 0px;
+    border: 1px;
     transition: background 0.3s;
-    
-    
+
 }
 
 .butonews:hover {
-     background-color: #bd3440;
+    background-color: #bd3440;
     transition: background 0.3s;
 }
 
-
-
-
-
 #encartwi:after {
-    content:"";
-  position:absolute;
-  top:-15px; /* value = - border-top-width - border-bottom-width */
-  left:10px; /* controls horizontal position */
-  border-width:0px 0px 15px 18px; /* vary these values to change the angle of the vertex */
-  border-style:solid;
-  border-color:#7fa5f4 transparent;
+    content: "";
+    position: absolute;
+    top: -15px; /* value = - border-top-width - border-bottom-width */
+    left: 10px; /* controls horizontal position */
+    border-width: 0px 0px 15px 18px; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color: #7fa5f4 transparent;
 
-  display:block;
-  width:0;
+    display: block;
+    width: 0;
 }
 
 .pictosoc:hover {
     transform: rotateY(25deg);
 }
 
-
-
 .ombrage2 {
-      -moz-box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset; 
-  -webkit-box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset;
-  box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset;
+    -moz-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3) inset;
+    -webkit-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3) inset;
 }
 
 #imagearticle:hover {
-      -moz-box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset; 
-  -webkit-box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset;
-  box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset;
+    -moz-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3) inset;
+    -webkit-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3) inset;
 }
-
 
 /************************STYLE-404********************************/
 
@@ -991,7 +942,7 @@ border: 1px;
     background-color: rgba(255, 255, 255, 0.75)
 }
 
-#construction p{
+#construction p {
     font-family: "pixel font-7";
     letter-spacing: 2px;
     font-size: 2em;
@@ -1010,12 +961,8 @@ border: 1px;
     font-family: "pixel font-7";
 }
 
-
-
-
-
 #logohover {
-    
+
 }
 
 #titrejv {
@@ -1029,19 +976,16 @@ border: 1px;
 }
 
 #home2 {
-  display: block;
-margin-top: 0px;
+    display: block;
+    margin-top: 0px;
 }
 
 #home2 img {
-  margin-top: -2px; 
-height: 15px;
+    margin-top: -2px;
+    height: 15px;
 }
 
-
-
 .menufooter {
-
 
     z-index: 1;
 }
@@ -1055,7 +999,6 @@ height: 15px;
 }
 
 #jvsecure {
-
 
 }
 
@@ -1072,10 +1015,10 @@ height: 15px;
 #secureconnex {
     width: 90%;
     margin-left: 5%;
-     margin-right: 5%;
+    margin-right: 5%;
 }
 
-.securepropos{
+.securepropos {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -1091,21 +1034,24 @@ height: 15px;
     height: 130px;
 }
 
-.align /**NEW*_PROFIL*/{
+.align /**NEW*_PROFIL*/
+{
     width: 100%;
     text-align: center;
 }
 
-#gc_menu {width: 30%;
-margin-left: 35%;
-margin-right: 35%;
-margin-top: 25px;
-margin-bottom: 25px;}
+#gc_menu {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 
 #fichedeprod {
     width: 100%;
     margin: 0%;
-    
+
 }
 
 .encarlevel {
@@ -1114,9 +1060,12 @@ margin-bottom: 25px;}
     margin-left: 1%;
 }
 
-.level {margin-left: 10%;
+.level {
+    margin-left: 10%;
     margin-right: 10%;
-width: 80%;}
+    width: 80%;
+}
+
 #secure_filtre_jv {
     width: 50%;
     margin-left: 25%;
@@ -1136,170 +1085,158 @@ width: 80%;}
     margin-left: 6%;
     font-family: "Avenir";
 }
+
 /********** JEU VIDEO ***********/
 
-
-.jv6
-{
+.jv6 {
     width: 23%;
     margin: 1%;
 }
 
-
-#contenu
-{
+#contenu {
     margin: 2%;
     width: 96%;
 }
 
-.jeuxvideo
-{
+.jeuxvideo {
     width: 40%;
     float: left;
 }
 
-.pagejvp .jeuxvideo_select
-{
-width: 40%;
-margin-right: 0%;
-margin-left: 0%;
-margin-top: 0px;
-float: right;
+.pagejvp .jeuxvideo_select {
+    width: 40%;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0px;
+    float: right;
 
 }
-.jeuxvideo_select #boutonfiltre
-{
+
+.jeuxvideo_select #boutonfiltre {
     background-color: #465c88;
     margin-top: 2px;
     width: 14%;
     color: white;
 }
 
-#num_page li
-{
+#num_page li {
     font-size: 20px;
     padding-left: 0px;
 }
-#num_page
-{
+
+#num_page {
     margin-left: 27%;
 }
+
 /**********  PACK JEU VIDEO ***********/
-.jeuxvideo_title
-{
+.jeuxvideo_title {
     width: 100%;
 }
-.jv7
-{
+
+.jv7 {
     width: 23%;
     margin: 1%;
 }
-.pagejvp1 #bouton
-{
+
+.pagejvp1 #bouton {
     width: 50%;
     margin-top: 15px;
     margin-left: 5%
 }
+
 /***********************PANIER********************/
- .panier_article
- {
+.panier_article {
     width: 100%;
-      
- }
- #corp_panier
- {
+
+}
+
+#corp_panier {
     width: 100%;
     margin-left: 0px;
- }
- .panier_image
- {
+}
+
+.panier_image {
     margin-left: 15px;
     margin-right: 10px;
     width: 15%;
     height: 100px;
- 
- }
- .bouton_supp .police
- {
+
+}
+
+.bouton_supp .police {
     width: 15px;
     margin-right: 0px;
- }
+}
 
- /**********CONTACT*************/
+/**********CONTACT*************/
 
- #contact_text
- {
-  width: 80%;
- }
- 
- #contact_map iframe
- {
+#contact_text {
+    width: 80%;
+}
+
+#contact_map iframe {
     width: 100%;
- }
+}
 
 /***********BLOG*********/
 
-#blog_select
-{
- float: right;
- margin-bottom: 20px;
- margin-right: 1%
+#blog_select {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 1%
 }
-.blog_select1
-{
- margin-right: 0%;
- 
- 
+
+.blog_select1 {
+    margin-right: 0%;
+
 }
-.blog_select1 button
-{
- float: none;
- float: right;
- margin-right: 2%;
- margin-top: 5px;
- width: 50%;
+
+.blog_select1 button {
+    float: none;
+    float: right;
+    margin-right: 2%;
+    margin-top: 5px;
+    width: 50%;
 }
-.blog_select1 #boutonfiltre
-{
+
+.blog_select1 #boutonfiltre {
     background-color: #465c88;
     margin-top: 2px;
     width: 14%;
     color: white;
 }
 
-#blog_page #num_page
-{
+#blog_page #num_page {
     margin-left: 18%;
 }
- #article_page
- {
+
+#article_page {
     width: 100%;
     margin: 0%;
- }
- .blog_article1 label
-{
-  font-family: "AvenirNextLTPro-Regular";
-  color:#7ea4f2;
-  margin-top: 200px;
 }
-.blog_article1 .formu_comment1
-{
+
+.blog_article1 label {
+    font-family: "AvenirNextLTPro-Regular";
+    color: #7ea4f2;
+    margin-top: 200px;
+}
+
+.blog_article1 .formu_comment1 {
     margin-top: 20px;
     margin-left: 0%;
     margin-bottom: 10px;
     width: 100%;
 }
 
-.blog_article1 .formu_comment2
-{
-    
+.blog_article1 .formu_comment2 {
+
     margin-bottom: 10px;
     width: 100%;
     height: 200px;
     margin-left: 0%;
 }
-.formu_combouton
-{
+
+.formu_combouton {
     width: 50%;
     background-color: #bd3440;
     color: white;
@@ -1309,62 +1246,55 @@ float: right;
     border: none;
 }
 
-
 /********** RECHERCHE***********/
 
-
-.recherche2 img
- {
+.recherche2 img {
     width: 100%;
     height: 100px;
- }
- .recherche2
- {
+}
+
+.recherche2 {
     width: 96%;
     margin: 2%;
- }
+}
 
- .recherche2 form
- {
+.recherche2 form {
     width: 80%;
     margin: auto;
- }
- 
-  .recherche2 #recherche
- {
+}
+
+.recherche2 #recherche {
     width: 70%;
 }
-  .recherche2 .panier_image
- {
+
+.recherche2 .panier_image {
     width: 16%;
     height: 102px;
 
 }
 
- .recherche2 input
- {
+.recherche2 input {
     width: 49.5%;
-    
- }
- 
- /********FICHE JEU********/
 
-#info_jeu
-{
+}
+
+/********FICHE JEU********/
+
+#info_jeu {
     width: 96%;
     margin: 2%;
-    margin-top:0px;
+    margin-top: 0px;
 }
-.prix_jeuxfiche{
+
+.prix_jeuxfiche {
     color: #bd3440;
- }
+}
 
 .secure_ipad_recherche {
     margin-left: 10%;
     margin-top: 10px;
 }
+
 .text2 {
     height: auto;
 }
-
-
