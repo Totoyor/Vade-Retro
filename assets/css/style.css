@@ -1,0 +1,2451 @@
+*{  margin:auto;
+    font-size: 100%;}
+
+/* Font Face */
+@font-face {
+ font-family: 'pixel font-7';
+    src: url('../fonts/pixel font-7.eot');
+    src: url('../fonts/pixel font-7.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pixel font-7.woff') format('woff'),
+         url('../fonts/pixel font-7.ttf') format('truetype'),
+         url('../fonts/pixel font-7.svg#pixel font-7') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+ font-family: 'Avenir';
+    src: url('../fonts/AvenirNextLTPro-Regular.eot');
+    src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+         url('../fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
+         url('../fonts/AvenirNextLTPro-Regular.svg#pixel font-7') format('svg');
+}
+
+
+
+body {
+    
+background: rgb(70,92,136); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(70,92,136,1) 0%, rgba(127,165,244,1) 50%, rgba(70,92,136,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(70,92,136,1)), color-stop(50%,rgba(127,165,244,1)), color-stop(100%,rgba(70,92,136,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(70,92,136,1) 0%,rgba(127,165,244,1) 50%,rgba(70,92,136,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(70,92,136,1) 0%,rgba(127,165,244,1) 50%,rgba(70,92,136,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(70,92,136,1) 0%,rgba(127,165,244,1) 50%,rgba(70,92,136,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(70,92,136,1) 0%,rgba(127,165,244,1) 50%,rgba(70,92,136,1) 100%); 
+
+    
+    /****
+    background: rgb(53,70,104); 
+background: -moz-linear-gradient(left,  rgba(53,70,104,1) 0%, rgba(73,96,143,1) 50%, rgba(53,70,104,1) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(53,70,104,1)), color-stop(50%,rgba(73,96,143,1)), color-stop(100%,rgba(53,70,104,1))); 
+background: -webkit-linear-gradient(left,  rgba(53,70,104,1) 0%,rgba(73,96,143,1) 50%,rgba(53,70,104,1) 100%); Chrome10+,Safari5.1+ 
+background: -o-linear-gradient(left,  rgba(53,70,104,1) 0%,rgba(73,96,143,1) 50%,rgba(53,70,104,1) 100%); 
+background: -ms-linear-gradient(left,  rgba(53,70,104,1) 0%,rgba(73,96,143,1) 50%,rgba(53,70,104,1) 100%); 
+background: linear-gradient(to right,  rgba(53,70,104,1) 0%,rgba(73,96,143,1) 50%,rgba(53,70,104,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#354668', endColorstr='#354668',GradientType=1 );***/
+
+background-size: contain;
+background-attachment: fixed;
+
+}
+
+
+/*** ------------OUTILS--------------- ***/
+
+.border {
+    border: solid #333 1px; }
+
+p {font-family: "Avenir";
+    
+}
+
+h1
+{
+	color:#333;
+    font-family: "pixel font-7";
+
+}
+
+
+h2
+{
+
+    margin-top: 0px;
+    font-family: "pixel font-7";
+    color: #7ea4f2;
+    margin-bottom: 5px;
+}
+
+
+
+h3
+
+{
+	color:#333;
+}
+
+
+
+.grand
+{
+	font-size: 1.8em;
+}
+
+.moyen
+{
+	font-size: 1.4em;
+}
+
+.normal {
+    font-size: 1.1em;
+}
+
+.petit
+{
+	font-size: 0.8em;
+}
+
+.center{ text-align: center}
+
+.selected
+{
+	color: #09F;
+	font-weight: bold;
+}
+
+.interieur
+{
+	padding: 5px 0px 5px 0px;
+}
+
+.padding
+{
+	margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.blue {
+    color: #465c88;
+}
+
+.blueC{
+    color: #81a7f7;
+}
+
+.red {
+color: #e73e4d;
+}
+
+.redF {
+    color: #bd3440;
+}
+
+.white { color: #fff;}
+
+.grey { color: #ddd }
+
+.ombrage {
+  -moz-box-shadow: 0px 5px 10px rgba(0,0,0,0.1); 
+  -webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.1); 
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+} 
+
+.right {text-align: right;}
+
+.secure {padding: 6px;}
+    
+/* ------------SQUELETON--------------- */
+#container{width:1200px ;
+margin:auto;
+background-color: #fff;}
+
+#header {
+    background-color: #fff;
+    z-index: 3000;
+}
+
+
+#action {
+    background-color: #fff;
+    background-image: url(../images/fondbody2.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#part_haut {
+    width: 100%;
+}
+
+#part_bas {
+
+    background-color: rgba(0,0,0,0.75);
+    width: 100%;
+
+}
+
+#encar {
+    background-color: rgba(255,255,255,0.95);
+    margin-top: 85px;
+    border-radius: 2px;
+    margin-bottom: 85px;
+}
+
+#logo {
+    height: 90px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 10px;
+    
+}
+
+.search {
+    background-color: white;
+    font-size: 0.9em;
+}
+
+.encarsearch {
+width: 80%;
+font-size: 0.8em;
+}
+
+.basicbutton {
+width: 18%;
+margin-left: 0px;
+background-color:#e73e4d;
+color: white;
+font-size: 0.8em;
+padding-top:2px;
+padding-bottom:2px;
+margin-top:0px;
+border: 1px;
+    transition: background 0.3s;
+}
+
+.basicbutton:hover {
+    background-color: #bd3440;
+    transition: background 0.3s;
+}
+
+#textbouton {
+
+    padding-top: 18px;
+    font-family: "pixel font-7";
+    padding-bottom:  16px;
+}
+
+#nav {
+}
+
+.picto {
+    height: 80px;
+    margin-top: 10px;
+    
+}
+
+#console1 {
+    
+
+    height: 100%;
+    width: 50%;
+    
+}
+
+#console2 {
+    width: 50%;
+}
+
+#jeuxvideo {
+    background-color: #fff;
+}
+
+
+
+/****************Menu****************/
+
+#menu ul {
+
+margin-left: 12%;
+ list-style-type:none;
+ text-align:center;
+    margin-top: 20px;
+ }
+
+#menu li {
+ float:left;
+ margin:auto;
+ padding:0;
+font-family: "Avenir";
+ }
+
+#menu li a {
+ display:block;
+ color:#333;
+ text-decoration:none;
+    border-radius: 2px 2px 0px 0px;
+    
+ 
+    padding-top: 8px;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: background 0.3s;
+ }
+
+#menu li a:hover {
+ -moz-animation-name:hovermenu;
+	-moz-animation-duration:0.5s;
+	-moz-animation-iteration-count:1;
+	-moz-animation-direction:alternate;
+	-moz-animation-timing-function:ease-in-out;
+    
+    background-color: #eee;
+    transition: background 0.3s;
+    
+ }
+ 
+ #menu li ul {
+ position:absolute;
+ }
+ 
+ #menu ul li ul {
+ display:none;
+    z-index: 3000;
+ }
+ 
+ #menu ul li:hover ul {
+ display:block;
+ }
+
+#menu li:hover ul li {
+ float:none;
+ }
+ 
+
+#packsmenu {
+    color: #333!important;
+
+}
+
+#jvmenu {
+        color:#333!important;
+    
+}
+
+#packsmenu:hover {
+    background-color: #7fa5f4 !important;
+    color: #fff!important;
+
+}
+
+#jvmenu:hover {
+        background-color: #bd3440 !important;
+        color:#fff!important;
+    
+}
+
+#menu {
+    margin-top: -20px;
+}
+
+#navigation {
+
+}
+
+/***@-moz-keyframes hovermenu{
+	0% {
+		background-color:#bd3440;
+		-moz-border-radius:4px;
+	}
+	50% {
+		background-color:#7fa5f4;
+		-moz-border-radius:4px;
+	}
+	100% {
+		background-color:#fff;
+		-moz-border-radius:4px;
+	}
+}***/
+
+/*******************************************/
+
+
+
+#titreLogo {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.3em;
+    
+}
+
+#gaming {
+    letter-spacing: 15px;
+    margin-left: 13px;
+    color: #81a8f8;
+}
+
+#slogan {
+    margin-top: 40px;
+    color: grey;
+}
+
+#separator {
+}
+
+#connexion {
+    float: right;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+#separ {
+    margin-right: 20px;
+}
+
+#panier {
+    background: url(../images/panier.png) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    margin-top: -5px;
+    height: 30px;
+}
+
+#cosearch {
+    margin-top: 15px;
+}
+
+#connexion em {
+    text-decoration: underline;
+}
+
+/**********************FIN HEADER*******************************************/
+
+/**********************/
+#valeurs {
+    background: #222;
+     height: 15px;
+}
+
+#valeurs p { 
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#footer1 {
+
+    background-color: #fff;
+}
+
+.jv {
+    margin-top: 15px;
+    height: 250px;
+    background-color: #eee;
+    border: #fff solid 3px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-size: 100%;
+    
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+     margin-left: 2.65%;
+}
+
+.jv img {
+    width: 100%;
+    height: 190px;
+    position: absolute;
+}
+
+#jv1 {
+    margin-left: 6%;
+    background: url(../images/jv1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#presentation {
+    width: 50%;
+    float: left;
+    margin-top: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+#bouton {
+    width: 48%;
+    float: left;
+    background: #81a7f7;
+    margin-top: 18px;
+    color: white;
+      -moz-box-shadow: 2px 2px 0px rgba(0,0,0,0.3); 
+  -webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.3); 
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+    margin-bottom: 15px;
+    font-family: "pixel font-7";
+    font-size: 1.3em;
+
+}
+
+#titrepoint {
+    color: #bd3440;
+}
+
+#bouton:hover {
+background-color: #465c88;
+    transition: background 0.3s;
+}
+
+#prixpanier {
+    margin-top: 10px;
+}
+
+#nbpanier {
+    margin-top: 4px;
+}
+
+/******************/
+
+#picto1 {
+    background-image: url(../images/picto_console3.png);
+    background-size: contain;
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#picto2 {
+    background-image: url(../images/picto_jeux.png);
+    background-size: contain;
+    background-position: center;
+    margin-top: 10px;
+    
+     background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#picto3 {
+    background-image: url(../images/picto_livraison.png);
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/******************/
+
+
+#titregalerie {
+    margin-top: 25px;
+}
+
+#jv2 {
+    margin-left: 10px;
+    background: url(../images/jv2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#jv3 {
+       margin-left: 10px;
+    background: url(../images/jv3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#jv4 {
+    
+    
+}
+
+#jv5 {
+
+
+}
+
+.jv:hover {
+     -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    
+    background-size: 110%!important;
+    
+}
+
+/******************//******************/
+
+#slogan2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+/******************/
+
+
+
+
+.partiHaut {
+    height: 300px;
+    width: 100%;
+}
+
+.partiBas {
+    background-color: rgba(255,255,255,0.95);
+    padding: 20px 20px 20px 20px;
+    z-index: 2000;
+    position: absolute;
+     width: 100%;
+     margin-top: 5px;
+}
+
+.mention {
+    background-color: #333;
+    height: 80px;
+    width: 80px;
+    float: right;
+    z-index: 3000;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 80%;
+    position: absolute;
+}
+
+#edition_limit {
+    background: url(../images/edition_limit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#top_ventes {
+        background: url(../images/top_vente.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/******************/
+
+/*************LIST***************/
+.listtext {
+    list-style-type: square;
+    font-family:  "Avenir";
+    padding-left: 18px;
+    font-size: 0.85em;
+    line-height: 25px;
+}
+
+.listtext2 {
+    list-style-type: square;
+    font-family:  "Avenir";
+    line-height: 16px;
+    font-size: 0.9em;
+}
+/****************************/
+
+
+#textproduit {
+    margin-top: 15px;
+}
+
+.textproduit {
+    margin-top: 10px;
+    line-height: 18px;
+}
+
+.produithover {
+    opacity: 1;
+    z-index: 4000;
+    -moz-transition: opacity 0.3s ease-in;
+-webkit-transition:opacity 0.3s ease-in;
+    margin-top: 400px;
+    width: 100%;
+    position: absolute;
+}
+
+.produithover:hover {
+opacity:1;
+}
+
+.prix {
+    margin-right: 40px;
+    margin-top: 520px;
+    margin-bottom: 20px;
+    margin-left: 75%;
+    float: right;
+    clear: both;
+    z-index: 20000;
+    position: absolute;
+}
+
+/***********FOOTER*****************/
+
+
+footer {
+     background-color: #222;
+}
+
+#copyright {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/************MENU2******************/
+
+#menu2 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+#menu1 {
+    padding-bottom: 15px;
+}
+
+#menu3 {
+    padding-bottom: 15px;
+}
+
+
+
+.listtext2 li a:hover {
+    text-decoration: underline;
+}
+
+
+/************BLOG****************/
+
+
+
+#imagearticle {
+    height: 110px;
+    background: url(../images/article.png);
+    background-position: center;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#titrearticle {
+    font-family: "Avenir";
+    letter-spacing: 3px;
+
+
+}
+
+
+
+#article {
+    padding-left: 10px;
+}
+
+#blog {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#titreblog {
+    letter-spacing: 2px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+     margin-left: 5px;
+    margin-right: 5px;
+}
+
+#articleall {
+    margin-top: 25px;
+}
+
+#lien:hover {
+    text-decoration:underline;
+}
+
+#blog_select{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.blog_select1{
+    float: right;
+    margin-top: 12px;
+    margin-right:2%;
+    width: 40%;
+}
+
+
+/*************RS***************/
+
+#titreflux {
+    margin-top: 18px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#encartwi {
+
+    
+    background-color: #fff;
+    border: #7fa5f4 2px solid;
+    border-radius: 10px;
+    position: relative;
+    
+
+}
+
+.ultimli {
+    list-style-type: none;
+    margin-bottom: 8px;
+    margin-left: -15px;
+    color: #333; 
+
+}
+
+.pictosoc {
+    height: 80px;
+
+}
+
+#fb {
+    background: url(../images/fb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+        background-size: 70%;
+}
+
+#tw {
+    background: url(../images/twi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 73%;
+}
+
+#go {
+    background: url(../images/goo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 68%;
+}
+
+#securtwi {
+    padding: 10px;
+    padding-bottom: 6px;
+}
+
+/***************JVHOVER****************************/
+
+.jvprix {
+    height: 30px;
+    width: 100%;
+    /**background-color: rgba(70,92,136,0.9);**/
+    position: absolute;
+
+    background-color: rgba(0,0,0,1);
+    font-size: 1.1em;
+      margin-top: 214px;
+}
+
+.jvconsole {
+  
+    height: 25px;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    opacity: 1;
+    margin-top: 190px;
+      
+}
+
+.jvconsole:hover {
+    opacity: 1;
+}
+
+.jvPprix {
+    font-family: "pixel font-7";
+
+    color: #e73e4d;
+}
+
+/************INTERACT****************/
+
+.picto {
+
+    transition: background-size  0.5s ease-in-out;
+-moz-transition: background-size 0.5s ease-in-out;
+-ms-transition: background-size 0.5s ease-in-out;
+-o-transition: background-size 0.5s ease-in-out;
+-webkit-transition: background-size  0.5s ease-in-out;
+}
+
+#picto2:hover {
+    background-size: 100%;
+}
+
+#picto3:hover {
+    background-size: 107%;
+}
+
+.concept {
+    margin-bottom: 20px;
+}
+
+#filtre {
+ background-color: #eee;
+    color: #465c88;
+    border-style: ridge;
+    border: 2px #333;
+    border-radius: 0px;
+    margin-top: 3px;
+}
+
+
+
+#nexletter {
+    width: 65%;
+    padding-top: 4px;
+padding-bottom: 4px;}
+
+.butonews {
+    width: 35%;
+margin-left: -4px;
+background-color:#e73e4d;
+color: white;
+font-size: 0.8em;
+    padding-top: 6px!important;
+    padding-bottom: 6px!important;
+    margin-top:0px;
+border: 1px;
+    transition: background 0.3s;
+    
+}
+
+.butonews:hover {
+     background-color: #bd3440;
+    transition: background 0.3s;
+}
+
+
+
+#picto1:hover {
+    
+    background-size: 107%;
+
+    
+}
+
+#encartwi:after {
+    content:"";
+  position:absolute;
+  top:-15px; /* value = - border-top-width - border-bottom-width */
+  left:10px; /* controls horizontal position */
+  border-width:0px 0px 15px 18px; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:#7fa5f4 transparent;
+
+  display:block;
+  width:0;
+}
+
+.pictosoc:hover {
+    transform: rotateY(25deg);
+}
+
+
+
+.ombrage2 {
+      -moz-box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset; 
+  -webkit-box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset;
+  box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset;
+}
+
+#imagearticle:hover {
+      -moz-box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset; 
+  -webkit-box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset;
+  box-shadow: 0px 5px 12px rgba(0,0,0,0.3) inset;
+}
+
+
+/************************STYLE-404********************************/
+
+#construction {
+    background: #fff;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+#textconstruc {
+    margin-top: 50px;
+}
+
+#construction p{
+    font-family: "pixel font-7";
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+/***CORRECTION****/
+
+#inscription {
+    float: right;
+    margin-top: 5px;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.prixsecure {
+    font-family: "pixel font-7";
+}
+
+#logohover {
+    
+}
+
+/************************************ PAGE PANIER *************************************************/
+#titre_page
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.titre_page 
+{
+    font-family: "pixel font-7";
+    font-size: 2.5em;
+    color: #7ea4f2;
+    margin:auto;
+
+}
+
+
+
+
+.panier_article
+
+.panier_article:hover
+{
+    background-color: #ecf0f1;
+}
+
+#panier_prom
+{
+
+    height: 50px;
+
+}
+#panier_total
+{
+    background-color: white;
+    
+    height: 50px;
+    
+}
+#panier_validation
+{
+    background-color:#7ea4f2 ;
+   
+    height: 50px;
+    margin-bottom: 10px;
+   
+}
+
+.panier_image
+{
+  
+    height: 100%;
+
+
+  
+}
+
+.panier_image img
+{
+   
+    width: 100%;
+
+  
+}
+
+.panier_title
+{
+    padding-top: 15px;
+
+
+
+
+}
+.panier_prix
+{
+    font-family: "pixel font-7";
+    font-size: 1.1em;
+    color:#e73e4d ;
+    float: right;
+}
+
+.panier_title2
+{
+    font-family: "pixel font-7";
+    color:#7ea4f2;
+    font-size: 1.5em;
+
+}
+.panier_text 
+{
+    font-size: 10px;
+    color: black;
+
+}
+.panier_title p 
+{
+    line-height: 15px;
+}
+#panier_prom
+{
+    background-color: #465c88;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+#panier_code
+{
+    margin-top: 12px;
+
+}
+#panier_code
+{
+    font-family:"pixel font-7";
+    font-size:1em;
+    color: #fff;
+    padding-left: 20%;
+}
+#panier_code input
+{
+width: 200px;
+}
+#panier_total
+{
+ margin-top: 12px;
+
+
+}
+.panier_total
+{
+    font-family: "pixel font-7";
+    font-size: 1.5em;
+    color: #e73e4d;
+}
+
+
+.bouton_supp a {
+
+ width: 20px;
+ height: 20px;
+ text-decoration:none;
+float: right;
+margin-right: 5px;
+}
+.bouton_supp img
+{
+    height: 25px;
+    width: 25px;
+}
+.quantite
+{
+    float: right;
+    padding-top: 35px;
+    height: 20px;
+    width: 50px;
+}
+.quantite input
+{
+    width: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+button
+{
+    width: 50px;
+    color: white;
+    background-color: #e73e4d;
+    border: 1px solid #e73e4d;
+
+}
+
+.bouton_panier1
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bouton_panier a{
+
+width:100%;
+line-height: 30px;
+text-align:center;
+vertical-align:middle;
+background-color: #7ea4f2;
+color:white;
+text-decoration:none;
+float: right;
+padding-top: 10px;
+margin-top: 0px;
+margin-bottom: 30px;
+font-size: 1.5em;
+font-family: "AvenirNextLTPro-Regular";
+
+}
+.bouton_panier
+{
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 200px;
+
+
+}
+.bouton_panier a:hover
+{
+    background-color: #465c88;
+}
+
+.panier_article {
+   
+
+    background-color: white;
+    border: #fff solid 3px;
+    border-radius: 4px;
+    
+    background-size: 100%;
+     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+    padding-right: 5px;
+    padding-bottom: 10px;
+   
+}
+
+.panier_article img {
+   
+
+    height: 100%;
+   
+}
+
+.panier_article:hover
+{
+    background-color: #ecf0f1;
+}
+
+
+/************************ FIN PANIER ****************************/
+/************************************ PAGE JEUX VIDEO *********************************/
+
+.fil_dajeu
+{
+    color: #e73e4d;
+}
+
+#jeu_top
+{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.jeuxvideo_title
+{
+    font-family: "pixel font-7";
+    font-size: 3em;
+    color: #7ea4f2;
+    margin-left: 2%;
+    margin-top: 20px;
+    text-align: left;
+}
+.pagejvp .jeuxvideo_select 
+{
+    
+    float: right;
+    display: block;
+    margin-top: 0px;
+    margin-right:2%;
+}
+.pagejvp .jeuxvideo_select #filtre
+{
+    float: left;
+}
+
+.pagejvp .jeuxvideo_select #boutonfiltre
+{
+  width: 16%;
+  margin-top: 1px;
+  margin-right: 0%;
+  margin-left: 1%;
+}
+
+#minifiche
+{
+    
+    height: 178px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px #bbb; 
+}
+
+.jv1 {
+    margin-top: 15px;
+    height: 200px;
+    background-color: #000;
+    border: #fff solid 3px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-size: 100%;
+    
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+}
+.jv1:hover {
+     -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    
+    background-size: 110%!important;
+    
+}
+.jvcon
+{
+    float: left;
+    color: white;
+    font-size: 0.6em;
+    margin-top: 3px;
+
+}
+
+
+.jvPprix1
+{
+ font-family: "pixel font-7";
+    color: #e73e4d;
+}
+.jvprix1
+{
+    height: 27px;
+    width: 100%;
+    /**background-color: rgba(70,92,136,0.9);**/
+    position: absolute;
+    margin-top: 168px;
+    background-color: rgba(0,0,0,1);
+    opacity: 1;
+    z-index: 3000;
+}
+
+.jvprix3{
+height: 27px;
+    width: 100%;
+    /**background-color: rgba(70,92,136,0.9);**/
+    position: absolute;
+    margin-top: 168px;
+    background-color: black;
+    opacity: 1;
+    z-index: 3000;
+}
+
+
+
+.jv6 {
+    margin-left: 3%;
+   
+
+}
+.jv6 img 
+{
+    width: 100%;
+    height: 153px;
+    position: absolute;
+}
+
+.jv7 {
+       margin-left: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.jv7 img 
+{
+    width: 100%;
+    height: 143px;
+    position: absolute;
+}
+
+
+.jvconsole1 {
+    margin-top: 144px;
+    height: 25px;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    opacity: 1;
+      
+}
+
+.jvconsole3 {
+    margin-top: 144px;
+    height: 25px;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    opacity: 1;
+      
+}
+.jvconsole2 {
+    margin-top: 143px;
+    height: 25px;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    opacity: 1;
+      
+}
+.jvprix2
+{
+height: 27px;
+    width: 100%;
+    /**background-color: rgba(70,92,136,0.9);**/
+    position: absolute;
+    margin-top: 167px;
+    background-color: rgba(0,0,0,1);
+    opacity: 1;
+}
+.jvcheck {
+    
+    margin-left: 75%;
+    margin-top: 0px;
+    background-color: #e73e4d;
+    padding-right: 10px;
+    border: 10px #e73e4d solid;
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.jvcheck input
+{
+    
+    position: absolute;
+}
+
+.jvconsole1:hover {
+    opacity: 1;
+}
+
+
+.jeu_image img 
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#jeu_img {
+    margin-top: 10px;
+}
+
+
+.caract.jeuxvideo_title2
+{
+    font-family: "AvenirNextLTPro-Regular";
+    color: #465c88; 
+    font-size: 15px;
+}
+.jeuxvideo_title2
+{
+    color:#465c88; 
+}
+
+.jeuxvideo_console
+{
+    font-family: "AvenirNextLTPro-Regular";
+    float:left;
+    margin-left: 13px;
+    color: black;
+    font-size: 10px;
+
+}
+.jeux_prix
+{
+    float: right;
+
+}
+
+.jeuxvideo_prix
+{
+    
+    color: #e73e4d;
+    font-family: "pixel font-7";
+    margin-right: 13px;
+    float: right;
+
+
+}
+.caract 
+{
+    display: block;
+    text-align: center;
+    background-color: white;
+}
+
+.num_page ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+#num_page ul li a
+{
+    
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+display:inline-block;
+ float:left;   
+ width:40px;
+ height:30px;
+ font-family: "AvenirNextLTPro-Regular";
+ color:black;
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+}
+
+#num_page ul li a:hover
+{
+    text-decoration: underline;
+}
+
+.num_page
+{
+    margin-left: 26%;
+   
+}
+
+/************************************ PAGE CONTACT *************************************************/
+
+.contact_titre
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact_titre
+{
+    text-align: center
+}
+.contact_title
+{
+    font-family: "pixel font-7";
+  
+    color: #7ea4f2;
+}
+
+.contact_text 
+{
+
+ font-size: 15px;
+ margin-bottom: 20px;
+ 
+}
+#glob
+{
+    margin-top: 30px;
+}
+#contact_formulaire
+{
+    float: left;    
+
+}
+#contact_formulaire input
+{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+#contact_formulaire textarea
+{
+    width: 100%;
+    height: 200px;
+}
+#contact_formulaire button
+{
+  background-color: #e73e4d;
+  width: 40%;
+  height: 30px;
+  float: right;
+  margin-top: 5px;
+  
+}
+
+
+#contact_adresse
+{
+    
+    box-shadow: 1px 1px 1px #656565;
+
+    height: 200px;
+    float: right;
+    margin-top: 5px;
+}
+#contact_adresse p
+{
+    line-height: 30px;
+    text-align: left;
+
+
+}
+
+.vaderetro_nom
+{
+    font-family: "pixel font-7";
+    font-size: 30px;
+    color:#465c88; 
+    
+
+
+}
+#contact_adresse2
+{
+
+
+     
+    padding-left: 50px;
+}
+
+
+#contact_picto
+{
+    padding-top: 32px;
+    
+}
+#contact_picto1
+{
+    padding-left: 8px;
+}
+#contact_picto2
+{
+    padding-top: 37px;
+
+}
+#contact_picto3 img
+{
+    width: 32px;
+
+}
+#contact_picto3
+{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+#contact_map iframe
+{
+    padding-top: 30px;
+
+}
+/************************************ FIN PAGE CONTACT *************************************************/
+
+#fiche_head
+{
+
+    
+    margin-top: 20px;
+
+}
+#fiche_title
+{
+
+    float: left;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+.jeu_prix
+{
+    font-family: "pixel font-7";
+    font-size: 2.6em;
+    color:#e73e4d ;
+    line-height: 50px;
+    float: right;
+
+}
+
+.jeu_title
+{
+    font-family: "pixel font-7";
+    margin-bottom: 10px;
+    color:#7ea4f2;
+
+}
+.jeu_console 
+{
+    font-size: 15px;
+}
+#show {
+    
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    margin-top: 70px;
+ 
+
+}
+#show img
+{
+
+    width: 78%;
+    margin:1%;
+    float: left;
+
+}
+.jeu_img
+{
+    width: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+    float: right;
+}
+#show .jeu_img img
+{
+    width: 100%;
+    height: 80px;
+    padding-top: 7px;
+    float: right;
+}
+
+ 
+
+#jeu_resume
+{
+    width: 80%;
+    float: left;
+    margin-bottom: 20px;
+    
+}
+#jeu_resume p
+{
+    margin-top:10px;
+}
+.jeu_resume
+{
+    padding-top: 10px;
+    color: #e73e4d;
+    font-size: 17px;
+    
+}
+.jeu_resumeplus
+{
+    font-size: 15px;
+    line-height: 10px;
+
+}
+#jeu_carac
+{
+    width: 20%;
+    
+    height: 50px;
+    text-align: right;
+    
+     padding-top: 10px;
+     float: right;
+}
+.jeu_carac1
+{
+    color: #e73e4d;
+}
+#bouton_ajout
+{
+    margin-top: 20px;
+    
+    margin-bottom: 30px;
+    position: relative;
+}
+#bouton_ajout button
+{
+    width: 50%;
+    height: 35px;
+    background-color: #81A7F7;
+    color: white;
+    font-size: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    border: 0px;
+}
+
+#bouton_ajout button:hover
+{
+    
+    background-color: #465C88;
+}
+
+.prix_jeuxfiche{
+ color: #bd3440;
+}
+
+
+/* ------------- /General Play Pause ------------- */
+
+/* ------------- Effect ------------- */
+
+
+
+
+#jeu_visu
+{
+    height: 20%;
+    width: 80%;
+    background-color: yellow;
+
+}
+
+#home2 {
+    display: none;
+}
+
+
+/****_____________________CONNEXION / INSCRIPTION________________________***/
+
+#secureconnex {
+
+padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+#btnconnex {
+    margin-top: 20px;
+    float: right;
+    padding: 5px;
+}
+
+
+
+/****_____________________Inscription________________________***/
+
+
+
+#secureins {
+    margin-top: 25px;
+}
+
+/****_____________________gestion client________________________***/
+
+
+#gc_profil {
+    background-color: #333;
+    height: 810px;
+}
+
+#gc_menu {
+    margin-top: 65px;
+    padding-left: 20px;
+}
+
+.btnconnex {
+    margin-top: 20px;
+    float: right;
+    padding: 5px;
+    cursor: pointer;  
+    width: 20%;
+margin-left: 5px;
+background-color:#e73e4d;
+color: white;
+font-size: 0.8em;
+padding-top:5px;
+padding-bottom:5px;
+border: 1px;
+    transition: background 0.3s;
+
+}
+
+
+.securepropos {
+    padding: 10px;
+    margin-top:40px;
+    margin-bottom: 50px;
+}
+
+.securetext2 {
+    top: 20px;
+}
+
+#adressedelivraison {
+    margin-top: 50px;
+    padding-top: 50px;
+  
+}
+
+/******_________________________**********/
+
+
+.listtext3 {
+  
+    list-style-type: square;
+    font-family:  "Avenir";
+    line-height: 24px;
+    font-size: 0.8em;
+    margin-left: 40px;
+
+}
+
+textarea {resize: none;
+font-family: 'Avenir';
+color: #555;}
+
+.Tableau {
+    font-family: 'Avenir';
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px #eee solid;
+
+}
+
+td { 
+    width: 120px;
+    height: 30px;
+
+}
+
+.tr1 {
+    background-color: #465c88;
+    color: white;
+}
+
+.tr2 {
+    background-color: #eee;
+
+}
+
+.recherche2 {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;}
+
+
+#fichedeprod {
+margin-top: 50px;
+
+}
+
+.level{
+
+    background-color: #fff;
+    margin-top: 10px;
+
+    padding: 12px;
+}
+
+.encarlevel{
+    margin-top: 60px;
+padding: 10px;
+}
+
+#test{margin-top: 30px;}
+
+#contenu {margin-top: 30px;
+}
+
+.police{font-family: 'Avenir';              
+}
+
+
+#num_page{
+     margin-top: 20px;
+    margin-bottom: 20px;
+padding-bottom: 30px;}
+
+.paddingp {margin-top: 6px;
+    margin-bottom: 6px;}
+
+#contact_map{margin-bottom: 30px;}
+
+#contact_map iframe {
+    width: 100%;    
+}
+
+/************************************ PAGE Mentions legales ***************************************/
+#mention_title
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.mention_title
+
+{
+font-family: "pixel font-7";
+    font-size: 2.4em;
+    color: #7ea4f2;
+}
+
+.mention_title1
+{
+    font-family: "pixel font-7";
+    font-size: 3em;
+    color: #7ea4f2;
+
+}
+#mention_law
+{
+    padding-top: 10px;
+    margin-top: 20px;
+}
+#mention_law2
+{
+    padding-top: 5px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+#mention_title1
+{
+    text-align:  center;
+    margin-bottom: 20px;
+}
+
+#contact_adresse1
+{
+    
+    box-shadow: 1px 1px 1px #656565;
+
+    height: 200px;
+    float: left;
+    margin-top: 5px;
+}
+#contact_adresse1 p
+{
+    line-height: 30px;
+    text-align: left;
+
+
+}
+
+.vaderetro_nom
+{
+    font-family: "pixel font-7";
+    font-size: 25px;
+    color:#465c88; 
+    
+
+
+}
+.vaderetro_nom1
+{
+    font-family: "pixel font-7";
+    text-align: center;
+    font-size: 25px;
+    color:#465c88; 
+    margin-bottom: 10px;
+    
+
+
+}
+.vaderetro_nom2
+{
+    font-size: 15px;
+    margin-left: 2px;
+}
+
+#contact_adresse2
+{
+
+
+     
+    padding-left: 50px;
+}
+
+
+#contact_picto
+{
+    padding-top: 32px;
+    
+}
+#contact_picto1
+{
+    padding-left: 8px;
+}
+#contact_picto2
+{
+    padding-top: 37px;
+
+}
+#contact_picto3 img
+{
+    width: 32px;
+
+}
+#contact_picto3
+{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+#home2 {
+    display: none;
+}
+#contact_adresse3
+{
+    
+    box-shadow: 1px 1px 1px #656565;
+
+    height: 200px;
+    float: right;
+    margin-top: 5px;
+}
+#contact_adresse3 p
+{
+    line-height: 22px;
+    text-align: left;
+}
+
+.categ
+{
+    color: #bd3440;;
+}
+/****************************** PAGE BLOG ***********************/
+.fil_da1
+{
+    color: white;
+     padding-top: 30px;
+     padding-left: 10px;
+}
+.fil_da1 a
+{
+ padding-top: 10px;
+ color: white;
+}
+#blog_header{
+    background-color: #465c88;
+    
+    width: 100%;
+    height: auto;
+
+    
+
+}
+#blog_article
+{
+    height: auto;
+    
+    background-color: white;
+}
+#blog_select
+{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+.blog_select1 
+{
+    float: right;
+    margin-top: 12px;
+    margin-right:2%;
+}
+
+
+
+.blog_article1 {
+    
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.blog_article1 p
+{
+
+}
+
+.left_img {
+    float: left;
+    margin-right: 10px;
+
+}
+.blog_article1 img
+{
+    width: 25%;
+}
+
+.article_carac
+{
+    color: #7ea4f2;
+}
+.article_bltitle
+{
+    font-family: "pixel font-7";
+    font-size: 1.5em;
+    color: #bd3440;
+}
+.blognum_page ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ font-family: "AvenirNextLTPro-Regular";
+  font-size: 1em;
+ }
+#blognum_page ul li a
+{
+    
+ display:inline-block;
+ float:left;   
+ width:40px;
+ height:30px;
+ font-family: "AvenirNextLTPro-Regular";
+ font-size: 1.5em;
+ color:#465c88;;
+ text-decoration:none;
+ text-align:center;
+
+}
+#blognum_page{
+    margin-left: 33%;
+}
+.blognum_page1 
+{
+   padding-top: 5px;
+}
+.blog_article1 .formu_comment1
+{
+    margin-top: 20px;
+    margin-left: 0%;
+    margin-bottom: 10px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.blog_article1 .formu_comment2
+{
+    
+    margin-bottom: 10px;
+    width: 50%;
+    height: 200px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.formu_combouton
+{
+    width: 30%;
+    background-color: #bd3440;
+    color: white;
+    text-align:center;
+    height: 35px;
+    margin-left: 35%;
+    border: none;
+}
+
+/*********** FIN PAGE BLOG ****************/
+
+.left {text-align: left;}
+#adressedelivraison2 {
+     margin-top: 10px;
+    padding-top: 10px;
+}
+
+#gc_profil2 {
+    background-color: #333;
+    height: 350px;
+    
+}
+
+/****************RETOUCHE BouTTON PAGE PACK **************************/
+
+.bouttonpack {
+    margin-left: -4px;
+background-color:#e73e4d;
+color: white;
+padding-top:2px;
+padding-bottom:2px;
+margin-top:0px;
+border: 1px;
+transition: background 0.3s;
+}
+
+.bouttonpack:hover {
+    cursor: pointer;
+}
+
+#pays {
+     background-color: #eee;
+    color: #465c88;
+    border-style: ridge;
+    border: 2px #333;
+    border-radius: 0px;
+    margin-top: 3px;
+}
+
+#boutonfiltre {
+    background-color: #465c88;
+    border: 0px;
+    height: 22px;
+    padding: 0px;
+
+}
+#contain_search {
+    margin-bottom: 20px;
+}
+
+#secure_jv_home {
+    width: 500px;
+}
+
+#picto4 {
+      background-image: url(../images/picto_livraison.png);
+    background-size: 70%;
+    background-position: center;
+     background-repeat: no-repeat;
+    
+    height: 100px;
+    border-radius:  130px;
+    background-color: #333;
+}
+
+#final_text {
+    margin-top: 40px;
+}
+
+
+
+.fil_da {
+    padding-top: 30px;
+    font-family: "Avenir";
+}
+
+
+#secureconnex {
+    margin-top: 55px;
+}
+
+.secure_rechecheN {
+    height: 20px;
+}
+
+.secure_ipad_recherche {
+    
+
+    margin-top: 10px;
+}
+
+.secure_border {
+margin-top: 15px;
+ height: 200px;
+    background-color: #eee;
+    border: #fff solid 3px;
+
+    margin-bottom: 20px;
+    background-size: 100%;
+    
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+}
+
+.secure_border:hover {
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    
+    background-size: 110%!important;}
+
+.bouton_panier_modif {
+    font-family:  "pixel font-7";
+}
+
+#jvsecure {
+   
+}
+
+
+
+.menu_resp {
+    display: none;
+}
+
+#nbpanier2 {
+    display: none;
+}
+
+
+
+#butonews2 {
+    margin-left: 0px;
+}
+
+#butonews {
+    margin-left: 1px;
+}
+
+.text2 {
+    width: 100%;
+    height: 550px;
+ 
+}
+
+img {height: auto!important;}
+
+
+
+#securebtnpack {
+
+margin-left: 5%;
+
+}
+#etat {
+     background-color: #eee;
+    color: #465c88;
+    border-style: ridge;
+    border: 2px #333;
+    border-radius: 0px;
+    margin-top: 3px;
+}
+
+.titre_mention {
+    letter-spacing: 2px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+     margin-left: 5px;
+    margin-right: 5px;
+}
+
+.black {
+    color: black;
+}
+#pays1 {
+    background-color: #eee;
+    color: #465c88;
+    border-style: ridge;
+    border: 2px #333;
+    border-radius: 0px;
+    margin-top: 3px;
+}

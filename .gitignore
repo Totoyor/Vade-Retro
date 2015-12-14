@@ -1,0 +1,13 @@
+### VADE RETRO
+modele/pdo.php
+back-office/modele/pdo.php
+
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Created by .ignore support plugin (hsz.mobi)
