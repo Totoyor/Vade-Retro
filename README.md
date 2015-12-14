@@ -19,9 +19,6 @@ Excepté pour le back-office :
 * [Bootstrap] - Un thème gratuit de back office basé sur Bootstrap 3
 
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
 ### Installation
 
 Installation via le Terminal :
@@ -32,8 +29,8 @@ $ git clone https://github.com/Totoyor/Vade-Retro
 ```
 
 Il faut ensuite changer le fichier qui gère PDO :
-* Changez vos information de base de donnée dans modele/pdo-sample.php
-* Renommez-le en pdo.php
+* 1. Changez vos information de base de donnée dans modele/pdo-sample.php
+* 2 .Renommez-le en pdo.php
 
 ### Base de données
 
@@ -44,8 +41,8 @@ Une base de donnée comprenant tous les jeux et consoles du site est disponible 
 Accéder au back-office :
 
 Il faut d'abord changer le fichier qui gère PDO pour le back-office :
-* Changez vos information de base de donnée dans back-office/modele/pdo-sample.php
-* Renommez-le en pdo.php
+* 1. Changez vos information de base de donnée dans back-office/modele/pdo-sample.php
+* 2. Renommez-le en pdo.php
 
 Un compte admin par défaut est inclus dans la base de donnée :
 ```sh
@@ -64,6 +61,7 @@ Nous étions 4 dans ce projet :
 
 ### Démo
 
+* Lien à venir
 
 
 [//]: # (Liens)
