@@ -1,7 +1,7 @@
 # Vade-Retro
 
 Vade-Rétro est un site fictif de vente de jeux-vidéos et de consoles rétro gaming !
-Il à été crée dans le cadre du projet de fin d'année de l'[EEMI] (École Européenne des métiers de l'internet) en deuxième année.
+Il à été crée dans le cadre du projet de fin d'année de l'EEMI (École Européenne des métiers de l'internet) en deuxième année.
 
   - Vente de packs rétrogaming (Console + manettes + jeux)
   - Rachat de consoles et de jeux vidéos rétros
@@ -9,7 +9,7 @@ Il à été crée dans le cadre du projet de fin d'année de l'[EEMI] (École Eu
 ### Version
 1.0
 
-### Tech
+### Technos
 Vade-Retro n'utilise aucun framework :
 * Aucun Framework CSS n'était autorisé
 * Aucun Framework PHP n'était autorisé
@@ -31,14 +31,30 @@ $ git init
 $ git clone https://github.com/Totoyor/Vade-Retro
 ```
 
+Il faut ensuite changer le fichier qui gère PDO :
+* Changez vos information de base de donnée dans modele/pdo-sample.php
+* Renommez-le en pdo.php
+
 ### Base de données
 
 Une base de donnée comprenant tous les jeux et consoles du site est disponible :
-1. Créer une base de donnée nommée 'vanwelde'
-2. Installer le fichier vanwelde.sql dans votre la base de donnée 'vanwelde'
+* 1. Créer une base de donnée nommée 'vanwelde'
+* 2. Installer le fichier vanwelde.sql dans votre la base de donnée 'vanwelde'
+
+Accéder au back-office :
+
+Il faut d'abord changer le fichier qui gère PDO pour le back-office :
+* Changez vos information de base de donnée dans back-office/modele/pdo-sample.php
+* Renommez-le en pdo.php
+
+Un compte admin par défaut est inclus dans la base de donnée :
+```sh
+username  = admin@mail.fr
+password = admin
+```
 
 
-### Development
+### Développement
 Nous étions 4 dans ce projet :
 
 * 1 Développeur (Moi-même)
@@ -46,8 +62,11 @@ Nous étions 4 dans ce projet :
 * 1 Webmarketeur (Antonia Louveau)
 
 
+### Démo
+
+
 
 [//]: # (Liens)
 
-   [EEMI]: <http://www.eemi.com/fr/>
    [Bootstrap]: <http://twitter.github.com/bootstrap/>
+
